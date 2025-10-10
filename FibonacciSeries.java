@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class FibonacciSeries {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the num to write Fibonacci Series ");
+        int num = sc.nextInt();
+        int first = 0;
+        int second = 1;
+        int res = 0;
+
+        for(int i=0;i<num;i++){
+
+             res = first+second;
+             first = second;
+             second = res;
+            System.out.println(first + " ");
+        }
+
+    }
+}
