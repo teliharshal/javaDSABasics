@@ -11,12 +11,10 @@ public class FibonacciSeries {
         int res = 0;
 
         for(int i=0;i<num;i++){
-
+            System.out.println(first + " ");
              res = first+second;
              first = second;
              second = res;
-            System.out.println(first + " ");
         }
-
     }
 }
